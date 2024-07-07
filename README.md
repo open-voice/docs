@@ -1,12 +1,12 @@
 # Executive Summary
 
-Open Voice is an open-source speech corpus that collects and provides high-quality speech data for African languages. Our goal is to close the significant data gap in African speech & linguistic resources, enabling the training and development of inclusive AI models for the diverse languages and dialects of the African continent, and preserving some endangered Africa’s linguistic heritage.
+OpenVoice is an open-source speech corpus that collects and provides high-quality speech data for African languages. Our goal is to close the significant data gap in African speech & linguistic resources, enabling the training and development of inclusive AI models for the diverse languages and dialects of the African continent, and preserving some endangered Africa’s linguistic heritage.
 
 African languages are significantly underrepresented in the existing dataset in the rapid advancements of artificial intelligence technologies. All mainstream models miss the awareness of African culture, don't understand our dialects and languages and African people are unable to benefit equitably from AI and speech technologies. 
 
 Blame it on the scarcity of quality datasets. This scarcity impedes technological inclusivity and innovation, preventing many Africans from benefiting from modern AI-driven tools.
 
-Open Voice tackles this problem by creating a comprehensive, community-driven speech corpus for African languages. By leveraging contributions from native speakers, linguists, and developers, we gather diverse and accurate speech data. Our platform ensures high-quality, reliable datasets are freely available for developing ASR systems, NLP applications, and educational tools.
+OpenVoice tackles this problem by creating a comprehensive, community-driven speech corpus for African languages. By leveraging contributions from native speakers, linguists, and developers, we gather diverse and accurate speech data. Our platform ensures high-quality, reliable datasets are freely available for developing ASR systems, NLP applications, and educational tools.
 
 ## Impact On multiple fronts
 
@@ -19,27 +19,4 @@ Open Voice tackles this problem by creating a comprehensive, community-driven sp
 - ### Economic Inclusion
 -  Empower financial institutions and businesses to create more inclusive digital services, fostering economic growth and inclusion.
 
-By contributing to and supporting Open Voice, you play a very important role in advancing AI inclusivity and preserving the rich linguistic heritage of many endangered African languages. Together, we can ensure that every voice is heard and valued.
-
-### Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
-
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where mint.json is)
-
-```
-mintlify dev
-```
-
-### Publishing Changes
-
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+By contributing to and supporting OpenVoice, you play a very important role in advancing AI inclusivity and preserving the rich linguistic heritage of many endangered African languages. Together, we can ensure that every voice is heard and valued.

@@ -1,0 +1,81 @@
+---
+title: System Overview
+---
+
+Our aim is to build the OpenVoice platform in the open giving the public an opportunity to get involved in all stages of development. This includes stages starting from design and conceptualization to deployment. 
+However, to guide the conversation and provide a starting point, we present a high level overview of our 
+vision for the OpenVoice system here.
+
+<img
+  className="block dark:hidden"
+  src="/images/archi.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/archi.png"
+  alt="Hero Dark"
+/>
+
+## How it works
+The purpose of the OpenVoice system is to collect and store speech and text data. The user flow on the system can be outlined as follows:
+
+1. Speakers (Voice): Users read a text script (sentence, phrase etc.) and translate it to an African language of their choice. 
+2. Transcribers: Users listen to a voice snippet in an African language and transcribe it (provide the text in the African language). 
+3. Writers: Users contribute text scripts (in English or African language) for translation. 
+4. Reviewers: Users review voice and text transcription for accuracy. 
+
+You can join OpenVoice as any of the four user personas depending on your preference. 
+
+## System Architecture
+The core services are shown in the system architecture and it consists of the typical components you may find in any web or mobile facing 
+system. There are also some unique services specific to OpenVoice like the `Gamification` service. Let's briefly touch on all these components to shed more light on what they do. 
+
+### Frontend
+OpenVoice will be used primarily from a mobile application built for both the IOS and Android platforms. We could also provide a web facing interface but development will 
+prioritize the mobile apps.
+
+### Backend
+The `profile` backend service in the diagram is quite self-explanatory and will manage user profiles. The `Content` service will work in tandem with with the `ETL` (Extract Transform and Load) service from `ML and Data`, to process and store voice and text data. 
+We'll revisit the `ML and Data` section later. Finally, the `Gamification` service is the least obvious one here, so what does it do?
+
+#### Gamification
+The `Gamification` service is central to how OpenVoice will work. It involves:
+
+**1. Leveling Up:**
+Managing and assigning experience points (XP) for each task completed: reading a script, translating, transcribing, voting, writing scripts, reviewing scripts, and suggesting edits. 
+Managing leaderboards showcasing top contributors to foster friendly competition and community recognition.
+
+**2. Badges and Achievements:**
+Managing and assinging badges for specific milestones or actions for example:
+  - "Linguistic Maestro" for achieving a certain number of accurate translations.
+  - "Golden Ear" for consistently accurate transcriptions.
+  - "Community Champion" for actively voting and reviewing contributions.
+  - "Wordsmith" for writing high-quality scripts and prompts.
+  - "Editong or Editing Guru" for making insightful suggestions and corrections.
+
+**3. Virtual Currency and Rewards:**
+Manage a virtual currency (e.g., "Voice Coins") that users earn by completing tasks.
+Users can redeem the currency for rewards e.g., real chash rewards (if possible), discounts on language learning resources, merchandise etc.
+
+**4. Leaderboards:**
+Managing leaderboards including;
+- **Global Leaderboard:** Manage a global leaderboard showing top contributors.
+- **Category-Specific Leaderboards:** Manage separate leaderboards for tasks like transcribing, voting, and script writing.
+- **Community Leaderboards:** Manage leaderboards for specific language communities.
+
+In the future, the `Gamification` service may be broken down further into smaller components. 
+
+### ML and Data
+The OpenVoice system has the task of collecting and storing large amounts of voice data, thus there is a need for efficient data 
+pipeline services for preparing the data for storage. This is the role of the `ETL` service. 
+The `ASR` (Automatic Speech Recognition) service, will help with speech-to-text and text-to-speech features that will improve user experience on the app. The `ASR` service will 
+handle serving the ML models for these various ASR related tasks. 
+
+### Storage
+Storage essentially covers everything related to databases, key-value stores etc. 
+
+That's it for now! Of course, this design is a huge work-in-progress and we will keep updating the docs over time so expect changes and updates. 
+
+## Get involved
+If you find any part of this interesting and want to get involved, then check out the next page to learn more.

@@ -1,23 +1,23 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "OpenVoice Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
+    "dark": "/logo/antlogo.png",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#020045",
+    "light": "#ffffff",
+    "dark": "#020045",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#020045",
+      "to": "#9fc5e8"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Contact",
       "url": "mailto:hi@mintlify.com"
     }
   ],
@@ -37,6 +37,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
+        "system",
         "contributing"
       ]
     },
@@ -44,22 +45,27 @@
       "group": "Contributor Guide",
       "pages": [
         {
-          "group": "engineering",
+          "group": "Engineering",
           "pages": [
-            "contributor-guide/engineering/mobile"
+            "contributor-guide/engineering/mobile",
+            "contributor-guide/engineering/backend",
+            "contributor-guide/engineering/uiux",
+            "contributor-guide/engineering/data",
+            "contributor-guide/engineering/ml",
+            "contributor-guide/engineering/devops",
+            "contributor-guide/engineering/qa"
           ]
         },
-        "contributor-guide/data",
-        "contributor-guide/reviewers",
+        "contributor-guide/dataset",
         "contributor-guide/voice",
-        "contributor-guide/writers"
+        "contributor-guide/transcribers",
+        "contributor-guide/writers",
+        "contributor-guide/reviewers"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
     "discord": "https://discord.gg/Y7vSNUBu",
-    "github": "https://github.com/open-voice",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/open-voice"
   }
 }
