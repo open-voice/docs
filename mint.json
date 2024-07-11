@@ -23,13 +23,13 @@
   ],
   "topbarCtaButton": {
     "name": "Join the community",
-    "url": "https://discord.gg/Y7vSNUBu"
+    "url": "https://discord.gg/bNTqSdTYbh"
   },
   "anchors": [
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://discord.gg/Y7vSNUBu"
+      "url": "https://discord.gg/bNTqSdTYbh"
     }
   ],
   "navigation": [
@@ -65,7 +65,7 @@
     }
   ],
   "footerSocials": {
-    "discord": "https://discord.gg/Y7vSNUBu",
+    "discord": "https://discord.gg/bNTqSdTYbh",
     "github": "https://github.com/open-voice"
   }
 }
